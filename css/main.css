@@ -39,8 +39,17 @@ img {
   width: min(100% - 30px, 1280px);
   margin-inline: auto;
 }
-.logo-header, h1{
-  font-family:'Squada One', display;
+.logo-header, h1, .logo-footer{
+  font-family:'Squada One', display;  
+}
+.logo-header, .logo-footer {
+  color: #F2DDB6;
+  font-size: 2.6rem;
+padding-block: 8px;
+transition: 0.3s all;
+}
+.logo-header:hover, .menu-list li a:hover, .logo-footer:hover {
+  color: #fff;
 }
 .titulo, h2 {  
   position: relative;
@@ -89,13 +98,6 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.logo-header {
-  color: #F2DDB6;
-  font-size: 2.6rem;
-padding-block: 8px;
-transition: 0.3s all;
-}
-
 .menu-list {
   display: flex;
   flex-wrap: wrap;
@@ -107,10 +109,6 @@ transition: 0.3s all;
   padding: 4px 6px;
   transition: 0.3s all;
 }
-.logo-header:hover, .menu-list li a:hover {
-  color: #fff;
-}
-
 /* === HOME === */
 #home {
   position: relative;
@@ -249,4 +247,17 @@ margin-bottom: 12px;
 }
 .social-links img {
   width: 50px;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #D9072D;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.logo-footer {
+padding: 20px 10px;
 }
