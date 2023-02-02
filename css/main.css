@@ -1,0 +1,56 @@
+/* === RESET === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* === GERAL === */
+body {
+  font-family: 'Kentia', sans-serif;
+}
+.container {
+  width: min(100% - 30px, 1280px);
+  margin-inline: auto;
+}
+.logo-header {
+  font-family:'Squada One', display;
+}
+
+/* === HEADER === */
+header {
+background-color: #D9072D;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-header {
+  color: #F2DDB6;
+  font-size: 2.6rem;
+padding-block: 8px;
+transition: 0.3s all;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.menu-list li a{
+  color: #F2DDB6;
+  text-transform: uppercase;
+  padding: 4px 6px;
+  transition: 0.3s all;
+}
+.logo-header:hover, .menu-list li a:hover {
+  color: #fff;
+}
