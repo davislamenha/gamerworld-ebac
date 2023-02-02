@@ -229,3 +229,24 @@ object-fit: cover;
   letter-spacing: 2px;
   border: none;
 }
+.container-info h3 {
+  font: 400 2rem 'Squada One', display;
+  color: #111;
+  text-transform: uppercase; 
+  margin-bottom: 16px;
+}
+.contato-info a{
+  display: block;
+color: #D9072D;
+margin-bottom: 12px;
+}
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+  gap: 12px;
+  margin-top: 20px;
+}
+.social-links img {
+  width: 50px;
+}
