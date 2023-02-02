@@ -15,6 +15,22 @@ ul {
 body {
   font-family: 'Kentia', sans-serif;
 }
+section {
+  position: relative;
+  padding-block: 60px;
+}
+section::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  left: 0;
+  border-top: 150px solid #D9072D;
+  border-right: 150px solid transparent;
+  z-index: -1;
+  }
 img {
   display: block;
   max-width: 100%;
@@ -26,11 +42,27 @@ img {
 .logo-header, h1{
   font-family:'Squada One', display;
 }
+.titulo {  
+  position: relative;
+  font: 400 2.6rem 'Squada One', display;
+  color: #111;
+  text-transform: uppercase;
+}
+.titulo::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background-color: #D9072D;
+  height: 2px;
+  width: 100%;
+  bottom: 0px;
+  z-index: -1;
+}
 .subtitulo {
   display: block;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
+  color: #111;
+  letter-spacing: 2px;  
 }
 .btn {
   display: inline-block;
@@ -111,5 +143,16 @@ object-fit: cover;
   color: #111;
   margin-inline: auto;
   width: 40ch;
+}
 
+/* === CONSOLES === */
+.lista-consoles {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
+ flex-wrap: wrap;
+ margin-top: 80px;
+}
+.lista-consoles img {
+  max-width: 300px;  
 }
