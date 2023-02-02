@@ -65,6 +65,7 @@ img {
   letter-spacing: 2px;  
 }
 .btn {
+  cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
   background-color: #D9072D;
@@ -158,6 +159,9 @@ object-fit: cover;
 }
 
 /* === SOBRE === */
+#sobre {
+  padding-bottom: 0;
+}
 #sobre::after {
   display: none;
 }
@@ -182,4 +186,67 @@ object-fit: cover;
 .container-sobre p {
   color: #F2DDB6;
   margin-bottom: 20px;
+}
+
+/* === CONTATO === */
+.conteudo-contato {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+.conteudo-contato form {
+  display: flex;
+  flex-direction: column;
+}
+.conteudo-contato form label {
+  text-transform: uppercase;  
+  margin-bottom: 6px;
+}
+.conteudo-contato form label, .conteudo-contato form input {
+  font: 400 0.9rem 'Kentia', sans-serif; 
+}
+.conteudo-contato form input {
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.conteudo-contato form input, .conteudo-contato form textarea {
+  border-radius: 5px;
+  border: 1px solid #73071B;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+  transition: 0.3s ease;
+}
+.conteudo-contato form input:focus, .conteudo-contato form textarea:focus { 
+  outline: none;  
+  border-color: #D9072D;
+  
+}
+.conteudo-contato form textarea {  resize: none;
+  margin-bottom: 20px;
+
+}
+.conteudo-contato form button {
+  letter-spacing: 2px;
+  border: none;
+}
+.container-info h3 {
+  font: 400 2rem 'Squada One', display;
+  color: #111;
+  text-transform: uppercase; 
+  margin-bottom: 16px;
+}
+.contato-info a{
+  display: block;
+color: #D9072D;
+margin-bottom: 12px;
+}
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+  gap: 12px;
+  margin-top: 20px;
+}
+.social-links img {
+  width: 50px;
 }
