@@ -227,12 +227,14 @@ object-fit: cover;
   letter-spacing: 2px;
   border: none;
 }
-.container-info h3 {
-  font: 400 2rem 'Squada One', display;
-  color: #111;
-  text-transform: uppercase; 
-  margin-bottom: 16px;
+.container-info .img-mapa {
+  object-fit: cover;
+  width: 100%;
+height: 250px;
+border-radius: 5px;
+margin-bottom: 20px;
 }
+
 .contato-info a{
   display: block;
 color: #D9072D;
