@@ -42,7 +42,7 @@ img {
 .logo-header, h1{
   font-family:'Squada One', display;
 }
-.titulo {  
+.titulo, h2 {  
   position: relative;
   font: 400 2.6rem 'Squada One', display;
   color: #111;
@@ -155,4 +155,31 @@ object-fit: cover;
 }
 .lista-consoles img {
   max-width: 300px;  
+}
+
+/* === SOBRE === */
+#sobre::after {
+  display: none;
+}
+.container-sobre img {
+  width: 100%;
+}
+.container-sobre {
+  background-color: #222;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.container-sobre .subtitulo {
+  color: #D9072D;
+}
+.container-sobre h2 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+.container-sobre p {
+  color: #F2DDB6;
+  margin-bottom: 20px;
 }
